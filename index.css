@@ -223,6 +223,52 @@ header,
 .button-wrapper-collection:hover a {
   color: #fff;
 }
+.best-seller {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 58.59px;
+  text-align: center;
+}
+
+.best-seller-wrapper {
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+.filter-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filter-row a {
+  text-decoration: none;
+}
+
+.filter-row .filter-name {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  color: #000;
+}
+.filter-row .active {
+  font-weight: 600;
+}
+.show-all-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.show-all-button a {
+  background: #1e2832;
+  color: #fff;
+  width: Hug (93px) px;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Roboto";
+}
+
 /*
 *
 *
@@ -348,6 +394,10 @@ header,
     margin: 1em auto;
     text-align: center;
   }
+  .best-seller {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }
 @media (max-width: 767px) {
   .flower-right,
@@ -399,5 +449,36 @@ header,
     font-size: 42px;
     font-weight: 400;
     font-family: "Roboto";
+  }
+
+  .best-seller {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .best-seller-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .filters,
+  .show-all-button {
+    width: 100% !important;
+  }
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0;
+  }
+  .filter-name {
+    margin: 0 1em;
+    text-align: center;
+  }
+  .filter-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .show-all-button {
+    justify-content: center;
+    margin-top: 0.5em;
   }
 }
