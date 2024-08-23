@@ -68,7 +68,9 @@ header,
   bottom: 10%;
   right: 0;
 }
-
+.banner .row {
+  overflow-x: hidden;
+}
 .client-logo-area {
   grid-template-columns: repeat(5, 1fr);
 }
@@ -124,7 +126,28 @@ header,
   line-height: 58.59px;
   text-align: center;
 }
+.double-img span {
+  display: none;
+}
 
+.double-img:hover .position-absolute {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s ease-in-out;
+  background: #1e2832;
+  width: 100%;
+  padding: 15px 14px;
+}
+.double-img:hover span {
+  display: block;
+  color: #fff;
+  font-family: "Open-Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  padding: 0 10px;
+}
 .wrapper-img-sub-grid span {
   position: absolute;
   top: 5%;
@@ -145,6 +168,61 @@ header,
   background: #ff6f61;
 }
 
+.wrapper-zara {
+  background: url("file:///C:/Users/PC%20Software%20House/Desktop/New%20folder/PlumFront/assets/zarabg.png");
+  padding: 3em 0;
+  height: 700px;
+  background-position: 35%;
+  display: flex;
+  justify-content: center;
+}
+.zara-big-logo {
+  left: 0;
+  top: 10%;
+  background: url("file:///C:/Users/PC%20Software%20House/Desktop/New%20folder/PlumFront/assets/zara-logo-right.png");
+}
+.logo-zara-data {
+  max-width: 191px;
+  max-height: 81px;
+  margin-bottom: 1.5em;
+}
+.data-wrapper-zara {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  flex-direction: column;
+  padding: 0;
+}
+.zara-desc {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: #fff;
+}
+.button-wrapper-collection {
+  padding: 15px 25px 15px 25px;
+  background: #fff;
+  color: #1e2832;
+}
+.button-wrapper-collection a {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #1e2832;
+  text-decoration: none;
+}
+
+.button-wrapper-collection:hover {
+  background: #ff6f61;
+}
+.button-wrapper-collection:hover a {
+  color: #fff;
+}
 /*
 *
 *
@@ -260,6 +338,14 @@ header,
   .letter {
     font-size: 40px;
     line-height: 48px;
+    text-align: center;
+  }
+  .data-wrapper-zara {
+    align-items: center;
+  }
+  .zara-desc {
+    max-width: 80%;
+    margin: 1em auto;
     text-align: center;
   }
 }
