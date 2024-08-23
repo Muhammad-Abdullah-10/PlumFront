@@ -169,7 +169,7 @@ header,
 }
 
 .wrapper-zara {
-  background: url("file:///C:/Users/PC%20Software%20House/Desktop/New%20folder/PlumFront/assets/zarabg.png");
+  background: url("assets/zarabg.png");
   padding: 3em 0;
   height: 700px;
   background-position: 35%;
@@ -179,7 +179,7 @@ header,
 .zara-big-logo {
   left: 0;
   top: 10%;
-  background: url("file:///C:/Users/PC%20Software%20House/Desktop/New%20folder/PlumFront/assets/zara-logo-right.png");
+  background: url("assets/zara-logo-right.png");
 }
 .logo-zara-data {
   max-width: 191px;
@@ -251,6 +251,7 @@ header,
   line-height: 21.79px;
   text-align: left;
   color: #000;
+  padding: 0 0.75em;
 }
 .filter-row .active {
   font-weight: 600;
@@ -269,6 +270,90 @@ header,
   font-family: "Roboto";
 }
 
+
+.prodcuts-wrapper .display-grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    column-gap: 15px;
+    row-gap: 2em;
+}
+
+.product-wrapper-data{
+    width: 300px;
+    padding: 10px 0;
+}
+.pricing-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.product-title , .pricing-wrapper .category  , .pricing-wrapper .price{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+.pricing-wrapper .price , .product-title {
+    color: #000;
+    font-size: 18px;
+}
+.product-title a{
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+.pricing-wrapper .category {
+    color: #9F9F9F;
+}
+.img-wrapper{
+    display: block;
+}
+.product--wrapper{
+    max-width: 300px;
+    padding: 0;
+}
+.product--wrapper-img .img-wrapper img {
+    max-width: 300px;
+}
+.product--wrapper-img .shop-bar {
+    display: none;
+    bottom: 0%;
+    transition: .4s ease-in-out;
+}
+.product--wrapper-img:hover .shop-bar {
+    display: block;
+    bottom: 16%;
+    background: #1E2832;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    padding: 15px 14px;
+    width: 100%;
+}
+.whislist-wrapper i , .search-wrapper-p i , .wrapper-cart-p i  {
+    color: #fff;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.shop-now-p
+{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.shop-now-p:hover{
+    color: #ff6f61;
+}
 /*
 *
 *
@@ -295,6 +380,12 @@ header,
   .sub:nth-child(2) {
     margin-top: 20px;
   }
+
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+    .filters{
+        text-align: center;
+    }
 }
 @media (max-width: 1320px) {
   .double-img {
@@ -318,6 +409,13 @@ header,
   .min-width-1320-px {
     min-width: auto;
   }
+
+  .prodcuts-wrapper .display-grid{
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+  }
+  
 }
 @media (min-width: 992px) {
   .container {
@@ -398,6 +496,15 @@ header,
     font-size: 34px;
     line-height: 42px;
   }
+  .filter-row .filter-name{
+    text-align: center;
+  }
+
+  .prodcuts-wrapper .display-grid{
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+}
 }
 @media (max-width: 767px) {
   .flower-right,
@@ -480,5 +587,10 @@ header,
   .show-all-button {
     justify-content: center;
     margin-top: 0.5em;
+  }
+
+  .prodcuts-wrapper .display-grid{
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: auto;
   }
 }
